@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence de voyage</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js">
+
+    </script>
+
+</head>
+
+<body onload='startDate()'>
+    <header>
+
+
+        <div class="pricipale">
+            <ul class="active">
+                <li>
+                    <a href="./index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="./sejours.html">sejours</a>
+                </li>
+                <li>
+                    <a href="./Galerie.html">Galerie</a>
+                </li>
+
+                <li>
+                    <a href="./Contacts.html">Contacts</a>
+                </li>
+                <li>
+                    <a href="./a propos.html">a propos de nous</a>
+                </li>
+
+
+
+            </ul>
+
+
+        </div><br>
+        <script type="text/javascript">
+
+            function cherche_valeur() {
+                var valeur = "";
+                if (document.cookie) {
+                    var valeur_depart = document.cookie.indexOf("=") + 1;
+                    var valeur_fin = document.cookie.indexOf(";");
+                    if (valeur_fin == -1)
+                        valeur_fin = document.cookie.length;
+                    valeur = document.cookie.substring(valeur_depart, valeur_fin);
+                }
+                return valeur;
+            }
+
+            function fixer_valeur(indicateur, valeur, expire) {
+                var maintenant = new Date();
+                var temps = new Date(maintenant.getTime() + expire);
+                document.cookie = indicateur + "=" + valeur + "; expires=" + temps.toGMTString() + ";";
+            }
+
+            function etat_compteur() {
+                var peremption = 1000 * 60 * 60 * 24 * 365;
+                var nombre = cherche_valeur();
+                var compteur = 0;
+                if (nombre != "") compteur = parseInt(nombre);
+                if (document.cookie) {
+                    compteur = compteur + 1;
+                    fixer_valeur("compteur", compteur, peremption);
+                }
+                else {
+                    compteur = 1;
+                    fixer_valeur("compteur", compteur, peremption);
+                }
+                return (compteur);
+            }
+            //-->
+        </script>
+        </head>
+
+        <body bgcolor="#FFFFFF" text="#fff">
+
+
+
+            <script type="text/javascript">
+
+                var x = etat_compteur();
+                document.write("<p>Ceci est votre <b>" + x + "ème<\/b> visite sur cette page<\/p>");
+
+            </script>
+
+            <div class="titre">
+                <h1>BIENVENUE A L'AGENCE DE VOYAGE GET TOUR</h1><br>
+
+            </div>
+            <div class="Titre" id='date'></div>
+
+
+
+
+
+    </header>
+
+    <footer class="footer">
+        KECHAD OMAR DA6186135 &copy;
+    </footer>
+
+
+</body>
+
+
+</html>

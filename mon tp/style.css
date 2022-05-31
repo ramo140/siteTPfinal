@@ -1,0 +1,348 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+/*image de fond et retrograder de l'image */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/polynesia-ga5f786f72_1920.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/*positionnement de mon menu */
+ul {
+
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+}
+
+/* mise en forme de mon menu */
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+/*SURVOLE DU MENU */
+ul li a:hover {
+    background: #fff;
+    color: black;
+}
+
+/* lorsque le bouton est actif */
+ul li.active a {
+    background: #fff;
+    color: black;
+
+}
+
+.pricipale {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+/* pisition du nom de lagence dans la page d'accueil */
+.titre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*couleur et randeur du titre de l'agence */
+.titre h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.Titre {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 50px;
+}
+
+
+/*alligner les images au centre sur la page sejours*/
+.ul img {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 380px;
+    height: 200px;
+    margin-top: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    border-bottom: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+
+}
+
+.bodysahara {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/tunisia-g0db2817d2_1920.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+
+
+
+}
+
+.h1sahara {
+    margin-top: 100px;
+}
+
+.psahara {
+    margin-top: 50px;
+}
+
+.tabsahara,
+th,
+td {
+    border: 1px solid;
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/*le body de la page vols*/
+.bodyvols {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/airport-gcc700ed76_1920.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffff;
+
+}
+
+.h1vols {
+    margin-top: 100px;
+}
+
+.pvols {
+    margin-top: 50px;
+}
+
+.tabvols,
+th,
+td {
+
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+
+.bodypelrinage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/ramadan-g15aa4e166_1280.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    color: #ffff;
+
+
+
+}
+
+.h1pelrinage {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.ppelrinage {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bodyplage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/family-g669a3bc0b_1280.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    color: #ffff;
+
+
+
+}
+
+
+
+.h1plage {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.pplage {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 200;
+}
+
+.Galerie {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.galerie {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 10px;
+
+
+}
+
+form .corp-formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+}
+
+form .corp-formulaire .groupe {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .corp-formulaire .gauche .groupe input {
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color: blueviolet;
+    border-radius: 5px;
+}
+
+form .corp-formulaire .gauche .groupe i {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+    color: blueviolet;
+}
+
+form .corp-formulaire .droite {
+    margin-left: 40px;
+}
+
+form .corp-formulaire .droite .groupe {
+    height: 100%;
+}
+
+form .corp-formulaire .droite textarea {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid blueviolet;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 84%;
+}
+
+/*le boutton envoyer du formulaire contact*/
+form .pied-formulaire button {
+    margin-top: 10px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+/*survole du boutton envoyer */
+form .pied-formulaire button:hover {
+    transform: scale(1.05);
+}
+
+/*couleur et randeur de nous contacter */
+.contact h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.contact p {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.apropos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*couleur et randeur de nous contacter */
+.apropos h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.apropos p {
+    margin-top: 50px;
+    text-align: left;
+    color: #fff;
+}
+
+
+
+/* pied de page*/
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(42, 165, 79);
+    font-size: 16px;
+
+
+}
